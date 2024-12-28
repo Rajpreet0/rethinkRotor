@@ -1,9 +1,24 @@
+"use client";
 import Logo from "../Logo"
 import MenuItem from "./MenuItem"
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 
 const Navbar = () => {
+  const handleScrollToSection = (id: string) => {
+    const target = document.getElementById(id);
+    if (target) {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: target, offsetY: 100 },
+        ease: "power2.out",
+      });
+    }
+  };
+
   return (
-    <div className="p-4  w-full flex flex-row items-center justify-between">
+    <div className="p-4 z-10  w-full flex flex-row items-center justify-between drop-shadow-xl">
         <div className=" start-0">
             <Logo/>
         </div>
@@ -11,23 +26,26 @@ const Navbar = () => {
             <MenuItem 
               title="Projects"
               isHoverable
-              textSize="xl" />
+              isBig 
+              onClick={() => handleScrollToSection("projects")}/>
             <MenuItem 
               title="Motivation"
               isHoverable
-              textSize="xl" />
+              isBig 
+              onClick={() => handleScrollToSection("motivation")}/>
             <MenuItem 
               title="Power*Stage"
               isHoverable
-              textSize="xl" />
+              isBig 
+              onClick={() => handleScrollToSection("powerStage")}/>
             <MenuItem 
               title="Media"
               isHoverable
-              textSize="xl" />
+              isBig />
             <MenuItem 
               title="Contact"
               isHoverable
-              textSize="xl" />
+              isBig />
         </div>
     </div>
   )

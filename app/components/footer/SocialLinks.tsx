@@ -10,7 +10,7 @@ const SocialLinks: React.FC<SocialLinksInterface> = ({icon: Icon, link}) => {
     <a 
         href={link}
         className="p-2 rounded-full bg-lightColor text-textColor flex items-center justify-center">
-            <Icon size={16} />
+          <Icon size={16} />
     </a>
   )
 }

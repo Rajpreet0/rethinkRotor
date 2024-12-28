@@ -15,9 +15,9 @@ const Footer = () => {
 
         {/* Menu Items */}
         <div className="flex  flex-col lg:flex-row items-center  justify-center space-y-4 lg:space-y-0 lg:space-x-8 ">
-          <MenuItem isHoverable={false} textSize="lg" title="Home" />
-          <MenuItem isHoverable={false} textSize="lg" title="Imprint" />
-          <MenuItem isHoverable={false} textSize="lg" title="Privacy Policy" />
+          <MenuItem isHoverable={false} isBig={false} title="Home" />
+          <MenuItem isHoverable={false} isBig={false} title="Imprint" />
+          <MenuItem isHoverable={false} isBig={false} title="Privacy Policy" />
         </div>
 
         {/* Social Links */}
