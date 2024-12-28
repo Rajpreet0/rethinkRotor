@@ -38,7 +38,7 @@ const VideoBackground = () => {
                 <h1 className="text-4xl md:text-8xl md:mt-[100px] font-bold">rethink<span className="text-orangeColor">*</span>rotor</h1>
                 <h2 className="mt-4 text-2xl  md:text-3xl">supports the way out of the  recycling <br/> dilemma   of rotor blades</h2>
                 <div 
-                    
+                    onClick={() => handleScrollToSection("projects")}
                     className="flex items-center justify-center gap-4 w-[200px] border border-orangeColor cursor-pointer mt-4 rounded-lg 
                                 hover:scale-105 transition-all p-2">
                     <p className="text-lg text-orangeColor">Find out more</p>

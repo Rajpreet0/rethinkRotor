@@ -32,8 +32,8 @@ const Motivation = () => {
           WHY it is good for the environment
         </h1>
         <p className="text-textColor text-sm sm:text-md mt-2">
-          The European Union aims to achieve climate neutrality by 2050 through its
-          "European Green Deal." This transformation to a circular economy poses
+        The European Union aims to achieve climate neutrality by 2050 through its
+          &quot;European Green Deal.&quot; This transformation to a circular economy poses
           challenges for the fiber composite industry. Demand for lightweight
           materials, especially in wind energy, is growing, but recycling
           composites like epoxy resin FRPs remains difficult and unsustainable with
